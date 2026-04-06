@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post in deltles</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>here in your post deltaies</h2>
+    <% if(post) { %>
+    <p>post id: <%= post.id %></p>
+    <% } else { %>
+    <p>Post not found</p>
+    <% } %>
+    <div class="post">
+        <h3 class="user">@<%=post.usearname  %></h3>
+        <h4 class="content"><%= post.content  %></h4>
+    </div>
+</body>
+</html>
