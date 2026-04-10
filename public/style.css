@@ -1,13 +1,112 @@
-h1 {
-    color: maroon;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
 .post {
-    background-color: blanchedalmond;
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
 }
-.user{
+
+.post:hover {
+    transform: scale(1.03);
+}
+
+
+.user {
     font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
 }
-.yel{
-    background-color: yellow;
-    color: aqua;
+
+/* Content */
+.content {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+
+button {
+    margin-top: 12px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background: #0056b3;
+}
+
+
+button:active {
+    transform: scale(0.95);
+    background: #003f7f;
+}
+
+
+.yel {
+    background: #ffcc00;
+    color: black;
+}
+
+.yel:hover {
+    background: #e6b800;
+}
+
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
